@@ -1,13 +1,13 @@
 import React from 'react';
 import './App.css';
-import Home from './Components/Home';
-import ScreenNotes from './Components/ScreenNotes';
+import Home from './Components/Home.js';
+import ScreenNotes from './Components/ScreenNotes.js';
 
 
 function App() {
-  const [usuario, setUsuario] = React.useState(null);
+  const [usuario, setUser] = React.useState(null);
 
-  return <>{usuario ? <ScreenNotes/>: <Home/>}</>;
+  return <>{usuario ? <ScreenNotes/>: <Home setUser = {setUser} />}</>;
 }
 
 export default App;

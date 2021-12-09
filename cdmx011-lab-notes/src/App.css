@@ -13,7 +13,6 @@
 }
 
 .register_form{
-    position: relative;
-    justify-content: center;
-    display: inline-block;
+    display: flex;
+    align-items: center
 }
